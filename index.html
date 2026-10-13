@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookMyTrip | Find your next stay</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="page-wrap">
+        <header class="topbar">
+          <div class="brand-block">
+            <div class="brand-mark">bookmy <span>trip.</span></div>
+          </div>
+
+          <div class="call-box">
+            <span class="call-icon">☎</span>
+            <div>
+              <small>Call us</small>
+              <strong>+91 (0) 1234 567</strong>
+            </div>
+          </div>
+
+          <div class="search-box">
+            <input type="text" placeholder="Search with keyword here" />
+            <span class="search-icon">⌕</span>
+          </div>
+        </header>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <div class="nav-links">
+            <a href="#home">Hotels</a>
+            <a href="#flights">Flights</a>
+            <a href="#vacations">Vacations</a>
+            <a href="#deals">Hot Deals</a>
+            <a href="#travel-guides">Travel Guides</a>
+            <a href="#blogs">Blogs</a>
+          </div>
+          <button class="nav-btn" type="button">My Account</button>
+        </nav>
+
+        <main class="content" id="home">
+          <section class="hero" id="flights">
+            <div class="hero-card">
+              <div class="hero-banner">
+                <img src="image/image1.jpg" alt="A hotel destination in Mumbai" />
+                <div class="hero-info">
+                  <h1>Paris Hilton Hotel, Mumbai, India</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <div class="price-tag">$ 1200</div>
+                  <small>Save up to 30%</small>
+                </div>
+              </div>
+            </div>
+
+            <form class="booking-form" id="bookingForm">
+              <div class="booking-field">
+                <label>Where?</label>
+                <input type="text" value="Where?" />
+              </div>
+              <div class="booking-field">
+                <label>Check in</label>
+                <input type="text" value="Date" />
+              </div>
+              <div class="booking-field">
+                <label>Check out</label>
+                <input type="text" value="Date" />
+              </div>
+              <div class="booking-field">
+                <label>Rooms</label>
+                <input type="text" value="1" />
+              </div>
+              <div class="booking-field">
+                <label>Adults</label>
+                <input type="text" value="2" />
+              </div>
+              <div class="booking-field">
+                <label>Children</label>
+                <input type="text" value="0" />
+              </div>
+              <button type="submit">Search</button>
+            </form>
+            <p class="status-message" id="statusMessage" aria-live="polite"></p>
+          </section>
+
+          <section class="hotel-block" id="hotels">
+            <div class="section-head">
+              <h3>Popular Hotels</h3>
+              <div class="arrows" aria-label="Popular hotels navigation">
+                <button type="button" aria-label="Previous">‹</button>
+                <button type="button" aria-label="Next">›</button>
+              </div>
+            </div>
+
+            <div class="card-grid">
+              <article class="hotel-card" tabindex="0">
+                <div class="thumb thumb-one">
+                  <img src="image/image2.webp" alt="Hotel Santorini Palace" />
+                </div>
+                <div class="card-info">
+                  <h4>Hotel Santorini Palace</h4>
+                  <p>Hanoi, India</p>
+                  <div class="meta-row">
+                    <span class="price">$ 3200</span>
+                    <span class="tag">Popular</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="hotel-card" tabindex="0">
+                <div class="thumb thumb-two">
+                  <img src="image/image3.jpeg" alt="Hotel Assore in Dubai" />
+                </div>
+                <div class="card-info">
+                  <h4>Hotel Assore</h4>
+                  <p>Dubai</p>
+                  <div class="meta-row">
+                    <span class="price">$ 3200</span>
+                    <span class="tag">Popular</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="hotel-card" tabindex="0">
+                <div class="thumb thumb-three">
+                  <img src="image/image4.webp" alt="Sunset Resort in the Maldives" />
+                </div>
+                <div class="card-info">
+                  <h4>Sunset Resort</h4>
+                  <p>Maldives</p>
+                  <div class="meta-row">
+                    <span class="price">$ 1200</span>
+                    <span class="tag">Popular</span>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </section>
+
+          <section class="deal-banner" id="deals">
+            <div class="deal-tile deal-main">
+              <span class="deal-chip">HOT DEAL</span>
+              <h3>Paris Eurostar Breaks</h3>
+              <img src="image/image7.jpg" alt="Paris Eurostar Breaks" />
+              <p>Starting from $ 290</p>
+            </div>
+            <div class="deal-tile deal-alt">
+              <span class="deal-chip">HOT DEAL</span>
+              <h3>Beach Holiday Offers</h3>
+              <img src="image/image8.jpg" alt="Beach Holiday Offers" />
+              <p>Starting from $ 490</p>
+            </div>
+          </section>
+
+          <section class="blog-block" id="blogs">
+            <div class="section-head small-head">
+              <h3>Latest Blogs</h3>
+              <a href="#">Read more</a>
+            </div>
+            <div class="blog-box">
+              <img src="image/image6.avif" alt="Travel inspiration and destinations" />
+            </div>
+          </section>
+        </main>
+
+        <footer class="site-footer" id="travel-guides">
+          <div class="footer-top">
+            <div class="footer-col">
+              <h4>Company</h4>
+              <ul>
+                <li>About the company</li>
+                <li>Terms and conditions</li>
+                <li>Privacy Policy</li>
+                <li>Career</li>
+              </ul>
+            </div>
+
+            <div class="footer-col" id="support">
+              <h4>Customer Support</h4>
+              <ul>
+                <li>Contact</li>
+                <li>FAQ</li>
+                <li>Help Center</li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4>Follow us</h4>
+              <div class="socials">
+                <span>f</span>
+                <span>x</span>
+                <span>in</span>
+                <span>◎</span>
+              </div>
+            </div>
+
+            <div class="footer-col subscribe-box">
+              <h4>Don’t miss our deals and offers</h4>
+              <form id="subscribeForm">
+                <input type="email" placeholder="Enter your email" required />
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="footer-bottom">Copyright © 2013, all rights reserved</div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
